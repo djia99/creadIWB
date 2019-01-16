@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{10516E2E-7E84-4F91-A723-F75716B8572B}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>AbleClass</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>lib</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>d2d1.lib;d3d11.lib;dwmapi.lib;dcomp.lib;dwrite.lib;structuredquery.lib;Shcore.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>DEBUGBUILD;CURL_STATICLIB;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>lib</AdditionalIncludeDirectories>
+      <CompileAsManaged>false</CompileAsManaged>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>cryptlibd.lib;ws2_32.lib;wldap32.lib;libcurld.lib;shlwapi.lib;mfplay.lib;dxguid.lib;d2d1.lib;d3d11.lib;dwmapi.lib;dcomp.lib;dwrite.lib;structuredquery.lib;Shcore.lib;jpeg64d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>lib</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>lib</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>CURL_STATICLIB;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>lib</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>cryptlib.lib;ws2_32.lib;wldap32.lib;libcurl.lib;shlwapi.lib;mfplay.lib;dxguid.lib;d2d1.lib;d3d11.lib;dwmapi.lib;dcomp.lib;dwrite.lib;structuredquery.lib;Shcore.lib;jpeg64.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>lib</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AbleClass.h" />
+    <ClInclude Include="AbleClassDlg.h" />
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="animationutility.h" />
+    <ClInclude Include="AsyncLoaderHelper.h" />
+    <ClInclude Include="AsyncLoaderHelperInterface.h" />
+    <ClInclude Include="AsyncLoader\AsyncLoader.h" />
+    <ClInclude Include="AsyncLoader\AsyncLoaderInterfaces.h" />
+    <ClInclude Include="AsyncLoader\AsyncLoaderItemCache.h" />
+    <ClInclude Include="AsyncLoader\AsyncLoaderLayoutManager.h" />
+    <ClInclude Include="AsyncLoader\AsyncLoaderMemoryManager.h" />
+    <ClInclude Include="AsyncLoader\CriticalSectionLocker.h" />
+    <ClInclude Include="AsyncLoader\LoadableItemList.h" />
+    <ClInclude Include="AsyncLoader\MemorySizeConverter.h" />
+    <ClInclude Include="CAsyncSimpleImage.h" />
+    <ClInclude Include="CBoardSetDlg.h" />
+    <ClInclude Include="CBookDeleteDlg.h" />
+    <ClInclude Include="CBookDlg.h" />
+    <ClInclude Include="CBookMarkDlg.h" />
+    <ClInclude Include="CButtonDlg.h" />
+    <ClInclude Include="CCert.h" />
+    <ClInclude Include="CCreadButton.h" />
+    <ClInclude Include="CCreadGlobal.h" />
+    <ClInclude Include="CCreadPipe.h" />
+    <ClInclude Include="CCreadSkin.h" />
+    <ClInclude Include="CDocumentAccessor.h" />
+    <ClInclude Include="CDocumentConvert.h" />
+    <ClInclude Include="CDocumentManager.h" />
+    <ClInclude Include="CEditorDlg.h" />
+    <ClInclude Include="CEditorInsertDlg.h" />
+    <ClInclude Include="CEditorItem.h" />
+    <ClInclude Include="CEditorItemOperation.h" />
+    <ClInclude Include="CEditorSetDlg.h" />
+    <ClInclude Include="CEditorToolDlg.h" />
+    <ClInclude Include="CGdiPlusBitmap.h" />
+    <ClInclude Include="CHwpAccessor.h" />
+    <ClInclude Include="CInkDlg.h" />
+    <ClInclude Include="CBoardMenuDlg.h" />
+    <ClInclude Include="CLicenseDlg.h" />
+    <ClInclude Include="CMainDlg.h" />
+    <ClInclude Include="CMainMenuDlg.h" />
+    <ClInclude Include="CMainSettingDlg.h" />
+    <ClInclude Include="CMainUpDlg.h" />
+    <ClInclude Include="CMsPptAccessor.h" />
+    <ClInclude Include="CMsWordAccessor.h" />
+    <ClInclude Include="comptr.h" />
+    <ClInclude Include="CreadFile.h" />
+    <ClInclude Include="CSqliteBase.h" />
+    <ClInclude Include="CSyncEventHandlerRTS.h" />
+    <ClInclude Include="CToolDlg.h" />
+    <ClInclude Include="CVideoClipDlg.h" />
+    <ClInclude Include="CWhiteBoardDlg.h" />
+    <ClInclude Include="direct2dutility.h" />
+    <ClInclude Include="DrawGeometryOperation.h" />
+    <ClInclude Include="FlyerAnimation.h" />
+    <ClInclude Include="ImageClippingOperation.h" />
+    <ClInclude Include="ImageOperation.h" />
+    <ClInclude Include="ImageThumbnailControl.h" />
+    <ClInclude Include="ImageTransformationOperation.h" />
+    <ClInclude Include="lib\curlpp\cURLpp.hpp" />
+    <ClInclude Include="lib\curlpp\Easy.hpp" />
+    <ClInclude Include="lib\curlpp\Exception.hpp" />
+    <ClInclude Include="lib\curlpp\Form.hpp" />
+    <ClInclude Include="lib\curlpp\Info.hpp" />
+    <ClInclude Include="lib\curlpp\Infos.hpp" />
+    <ClInclude Include="lib\curlpp\internal\CurlHandle.hpp" />
+    <ClInclude Include="lib\curlpp\internal\OptionContainer.hpp" />
+    <ClInclude Include="lib\curlpp\internal\OptionContainerType.hpp" />
+    <ClInclude Include="lib\curlpp\internal\OptionList.hpp" />
+    <ClInclude Include="lib\curlpp\internal\OptionSetter.hpp" />
+    <ClInclude Include="lib\curlpp\internal\SList.hpp" />
+    <ClInclude Include="lib\curlpp\Multi.hpp" />
+    <ClInclude Include="lib\curlpp\Option.hpp" />
+    <ClInclude Include="lib\curlpp\OptionBase.hpp" />
+    <ClInclude Include="lib\curlpp\Options.hpp" />
+    <ClInclude Include="lib\curlpp\Types.hpp" />
+    <ClInclude Include="lib\curl\lib\config-win32.h" />
+    <ClInclude Include="lib\fmt\color.h" />
+    <ClInclude Include="lib\fmt\core.h" />
+    <ClInclude Include="lib\fmt\format-inl.h" />
+    <ClInclude Include="lib\fmt\format.h" />
+    <ClInclude Include="lib\fmt\ostream.h" />
+    <ClInclude Include="lib\fmt\posix.h" />
+    <ClInclude Include="lib\fmt\printf.h" />
+    <ClInclude Include="lib\fmt\ranges.h" />
+    <ClInclude Include="lib\fmt\time.h" />
+    <ClInclude Include="LineAnimation.h" />
+    <ClInclude Include="MediaPaneAnimation.h" />
+    <ClInclude Include="MoverAnimation.h" />
+    <ClInclude Include="MyMemDC.h" />
+    <ClInclude Include="PanAnimation.h" />
+    <ClInclude Include="PaneInterface.h" />
+    <ClInclude Include="PointAnimation.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="sharedobject.h" />
+    <ClInclude Include="ShellItemsLoader.h" />
+    <ClInclude Include="SimpleImage.h" />
+    <ClInclude Include="sqlite\sqlite3.h" />
+    <ClInclude Include="sqlite\sqlite3ext.h" />
+    <ClInclude Include="sqlite\SqliteEx.h" />
+    <ClInclude Include="sqlite\SqliteQuery.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ThumbnailControl.h" />
+    <ClInclude Include="ThumbnailImpl.h" />
+    <ClInclude Include="ThumbnailInfo.h" />
+    <ClInclude Include="ThumbnailLayoutInterface.h" />
+    <ClInclude Include="ThumbnailLayoutManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AbleClass.cpp" />
+    <ClCompile Include="AbleClassDlg.cpp" />
+    <ClCompile Include="animationutility.cpp" />
+    <ClCompile Include="AsyncLoaderHelper.cpp" />
+    <ClCompile Include="AsyncLoader\AsyncLoader.cpp" />
+    <ClCompile Include="AsyncLoader\AsyncLoaderItemCache.cpp" />
+    <ClCompile Include="AsyncLoader\AsyncLoaderLayoutManager.cpp" />
+    <ClCompile Include="AsyncLoader\AsyncLoaderMemoryManager.cpp" />
+    <ClCompile Include="AsyncLoader\LoadableItemList.cpp" />
+    <ClCompile Include="AsyncLoader\MemorySizeConverter.cpp" />
+    <ClCompile Include="CAsyncSimpleImage.cpp" />
+    <ClCompile Include="CBoardSetDlg.cpp" />
+    <ClCompile Include="CBookDeleteDlg.cpp" />
+    <ClCompile Include="CBookDlg.cpp" />
+    <ClCompile Include="CBookMarkDlg.cpp" />
+    <ClCompile Include="CButtonDlg.cpp" />
+    <ClCompile Include="CCert.cpp" />
+    <ClCompile Include="CCreadButton.cpp" />
+    <ClCompile Include="CCreadGlobal.cpp" />
+    <ClCompile Include="CCreadPipe.cpp" />
+    <ClCompile Include="CCreadSkin.cpp" />
+    <ClCompile Include="CDocumentAccessor.cpp" />
+    <ClCompile Include="CDocumentConvert.cpp" />
+    <ClCompile Include="CDocumentManager.cpp" />
+    <ClCompile Include="CEditorDlg.cpp" />
+    <ClCompile Include="CEditorInsertDlg.cpp" />
+    <ClCompile Include="CEditorItem.cpp" />
+    <ClCompile Include="CEditorItemOperation.cpp" />
+    <ClCompile Include="CEditorSetDlg.cpp" />
+    <ClCompile Include="CEditorToolDlg.cpp" />
+    <ClCompile Include="CHwpAccessor.cpp" />
+    <ClCompile Include="CInkDlg.cpp" />
+    <ClCompile Include="CBoardMenuDlg.cpp" />
+    <ClCompile Include="CLicenseDlg.cpp" />
+    <ClCompile Include="CMainDlg.cpp" />
+    <ClCompile Include="CMainMenuDlg.cpp" />
+    <ClCompile Include="CMainSettingDlg.cpp" />
+    <ClCompile Include="CMainUpDlg.cpp" />
+    <ClCompile Include="CMsPptAccessor.cpp" />
+    <ClCompile Include="CMsWordAccessor.cpp" />
+    <ClCompile Include="CreadFile.cpp" />
+    <ClCompile Include="CSqliteBase.cpp" />
+    <ClCompile Include="CSyncEventHandlerRTS.cpp" />
+    <ClCompile Include="CToolDlg.cpp" />
+    <ClCompile Include="CVideoClipDlg.cpp" />
+    <ClCompile Include="CWhiteBoardDlg.cpp" />
+    <ClCompile Include="direct2dutility.cpp" />
+    <ClCompile Include="DrawGeometryOperation.cpp" />
+    <ClCompile Include="FlyerAnimation.cpp" />
+    <ClCompile Include="ImageClippingOperation.cpp" />
+    <ClCompile Include="ImageThumbnailControl.cpp" />
+    <ClCompile Include="ImageTransformationOperation.cpp" />
+    <ClCompile Include="lib\curlpp\cURLpp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\Easy.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\Exception.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\Form.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\Info.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\internal\CurlHandle.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\internal\OptionList.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\internal\OptionSetter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\internal\SList.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\Multi.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\OptionBase.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\Options.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\fmt\format.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\fmt\posix.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="LineAnimation.cpp" />
+    <ClCompile Include="MediaPaneAnimation.cpp" />
+    <ClCompile Include="MoverAnimation.cpp" />
+    <ClCompile Include="PanAnimation.cpp" />
+    <ClCompile Include="PointAnimation.cpp" />
+    <ClCompile Include="ShellItemsLoader.cpp" />
+    <ClCompile Include="SimpleImage.cpp" />
+    <ClCompile Include="sqlite\shell.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqlite\sqlite3.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqlite\SqliteEx.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ThumbnailImpl.cpp" />
+    <ClCompile Include="ThumbnailLayoutManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AbleClass.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\curlpp\Easy.inl" />
+    <None Include="lib\curlpp\Info.inl" />
+    <None Include="lib\curlpp\internal\CurlHandle.inl" />
+    <None Include="lib\curlpp\internal\OptionContainer.inl" />
+    <None Include="lib\curlpp\internal\OptionSetter.inl" />
+    <None Include="lib\curlpp\Option.inl" />
+    <None Include="res\AbleClass.rc2" />
+    <None Include="res\pen_rm.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\board_menu\bg.bmp" />
+    <Image Include="res\AbleClass.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="AbleClass.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="summary.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

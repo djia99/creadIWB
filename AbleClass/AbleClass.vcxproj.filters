@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="AsyncLoader">
+      <UniqueIdentifier>{ed52a3aa-c14a-4bfd-8e38-636459900740}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sqlite">
+      <UniqueIdentifier>{cd5269f4-414d-43c4-8df0-7d6e5c4fbe02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fmt">
+      <UniqueIdentifier>{eb161561-e90d-42e6-b9c2-4ea95affb80e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="curl">
+      <UniqueIdentifier>{9fc04aa9-c210-4695-9ef3-67a2bc95e0c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="curlpp">
+      <UniqueIdentifier>{bed34663-f2fc-489d-9e76-de46090f4553}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="curlpp\internal">
+      <UniqueIdentifier>{59965ce3-7c40-428c-8646-1e77493a9c8b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbleClass.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AbleClassDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CToolDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CCreadButton.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CGdiPlusBitmap.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMemDC.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CButtonDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CCreadSkin.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CWhiteBoardDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="comptr.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="direct2dutility.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="animationutility.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ShellItemsLoader.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageOperation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleImage.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="sharedobject.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawGeometryOperation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageTransformationOperation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageClippingOperation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PointAnimation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CCreadGlobal.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CBookMarkDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CInkDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CBoardMenuDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CMainDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ThumbnailControl.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ThumbnailLayoutInterface.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ThumbnailLayoutManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FlyerAnimation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaPaneAnimation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageThumbnailControl.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MoverAnimation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="LineAnimation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ThumbnailInfo.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ThumbnailImpl.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDocumentManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CAsyncSimpleImage.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CMainMenuDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PanAnimation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PaneInterface.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CMainUpDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyncLoader\AsyncLoader.h">
+      <Filter>AsyncLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyncLoader\AsyncLoaderInterfaces.h">
+      <Filter>AsyncLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyncLoader\AsyncLoaderItemCache.h">
+      <Filter>AsyncLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyncLoader\AsyncLoaderLayoutManager.h">
+      <Filter>AsyncLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyncLoader\AsyncLoaderMemoryManager.h">
+      <Filter>AsyncLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyncLoader\CriticalSectionLocker.h">
+      <Filter>AsyncLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyncLoader\LoadableItemList.h">
+      <Filter>AsyncLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyncLoader\MemorySizeConverter.h">
+      <Filter>AsyncLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyncLoaderHelperInterface.h">
+      <Filter>AsyncLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyncLoaderHelper.h">
+      <Filter>AsyncLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="CSyncEventHandlerRTS.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CBookDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDocumentConvert.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDocumentAccessor.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CMsWordAccessor.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CHwpAccessor.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CMsPptAccessor.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CBookDeleteDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CEditorDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CEditorToolDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CVideoClipDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CEditorItem.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CEditorItemOperation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\SqliteEx.h">
+      <Filter>Sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\SqliteQuery.h">
+      <Filter>Sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="CSqliteBase.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CEditorInsertDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CEditorSetDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CMainSettingDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\sqlite3.h">
+      <Filter>Sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\sqlite3ext.h">
+      <Filter>Sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\fmt\color.h">
+      <Filter>fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\fmt\core.h">
+      <Filter>fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\fmt\format.h">
+      <Filter>fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\fmt\format-inl.h">
+      <Filter>fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\fmt\ostream.h">
+      <Filter>fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\fmt\posix.h">
+      <Filter>fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\fmt\printf.h">
+      <Filter>fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\fmt\ranges.h">
+      <Filter>fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\fmt\time.h">
+      <Filter>fmt</Filter>
+    </ClInclude>
+    <ClInclude Include="CLicenseDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\curl\lib\config-win32.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\curlpp\cURLpp.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\curlpp\Easy.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\curlpp\Exception.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\curlpp\Form.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\curlpp\Info.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\curlpp\Infos.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\curlpp\Multi.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\curlpp\Option.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\curlpp\OptionBase.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\curlpp\Options.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\curlpp\Types.hpp">
+      <Filter>curlpp</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\curlpp\internal\CurlHandle.hpp">
+      <Filter>curlpp\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\curlpp\internal\OptionContainer.hpp">
+      <Filter>curlpp\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\curlpp\internal\OptionContainerType.hpp">
+      <Filter>curlpp\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\curlpp\internal\OptionList.hpp">
+      <Filter>curlpp\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\curlpp\internal\OptionSetter.hpp">
+      <Filter>curlpp\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\curlpp\internal\SList.hpp">
+      <Filter>curlpp\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="CCert.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CBoardSetDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CreadFile.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CCreadPipe.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AbleClass.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AbleClassDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CToolDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CCreadButton.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CButtonDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CCreadSkin.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CWhiteBoardDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="direct2dutility.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="animationutility.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ShellItemsLoader.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleImage.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawGeometryOperation.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageTransformationOperation.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageClippingOperation.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PointAnimation.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CCreadGlobal.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CBookMarkDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CInkDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CBoardMenuDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CMainDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyncLoader\AsyncLoader.cpp">
+      <Filter>AsyncLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyncLoader\AsyncLoaderItemCache.cpp">
+      <Filter>AsyncLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyncLoader\AsyncLoaderLayoutManager.cpp">
+      <Filter>AsyncLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyncLoader\AsyncLoaderMemoryManager.cpp">
+      <Filter>AsyncLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyncLoader\LoadableItemList.cpp">
+      <Filter>AsyncLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyncLoader\MemorySizeConverter.cpp">
+      <Filter>AsyncLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="ThumbnailLayoutManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FlyerAnimation.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaPaneAnimation.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageThumbnailControl.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MoverAnimation.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LineAnimation.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ThumbnailImpl.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDocumentManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CAsyncSimpleImage.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CMainMenuDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PanAnimation.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CMainUpDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyncLoaderHelper.cpp">
+      <Filter>AsyncLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="CSyncEventHandlerRTS.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CBookDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDocumentConvert.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CDocumentAccessor.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CMsWordAccessor.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CHwpAccessor.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CMsPptAccessor.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CBookDeleteDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CEditorDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CEditorToolDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CVideoClipDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CEditorItem.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CEditorItemOperation.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite\SqliteEx.cpp">
+      <Filter>Sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="CSqliteBase.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CEditorInsertDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CEditorSetDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CMainSettingDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite\shell.c">
+      <Filter>Sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite\sqlite3.c">
+      <Filter>Sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\fmt\format.cc">
+      <Filter>fmt</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\fmt\posix.cc">
+      <Filter>fmt</Filter>
+    </ClCompile>
+    <ClCompile Include="CLicenseDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\cURLpp.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\Easy.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\Exception.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\Form.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\Info.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\Multi.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\OptionBase.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\Options.cpp">
+      <Filter>curlpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\internal\CurlHandle.cpp">
+      <Filter>curlpp\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\internal\OptionList.cpp">
+      <Filter>curlpp\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\internal\OptionSetter.cpp">
+      <Filter>curlpp\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\curlpp\internal\SList.cpp">
+      <Filter>curlpp\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="CCert.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CBoardSetDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CreadFile.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CCreadPipe.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AbleClass.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\AbleClass.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\pen_rm.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="lib\curlpp\Easy.inl">
+      <Filter>curlpp</Filter>
+    </None>
+    <None Include="lib\curlpp\Info.inl">
+      <Filter>curlpp</Filter>
+    </None>
+    <None Include="lib\curlpp\Option.inl">
+      <Filter>curlpp</Filter>
+    </None>
+    <None Include="lib\curlpp\internal\CurlHandle.inl">
+      <Filter>curlpp\internal</Filter>
+    </None>
+    <None Include="lib\curlpp\internal\OptionContainer.inl">
+      <Filter>curlpp\internal</Filter>
+    </None>
+    <None Include="lib\curlpp\internal\OptionSetter.inl">
+      <Filter>curlpp\internal</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\AbleClass.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="images\board_menu\bg.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="AbleClass.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="summary.txt" />
+  </ItemGroup>
+</Project>
